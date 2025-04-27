@@ -11,6 +11,7 @@ This project is focusing on using **Python Jupyter Notebook** to parsing the per
 
 ## Table of Contents
 - README.md
+- LICENSE.txt
 - Douban Book Scrapping.ipynb
 - Douban_books_result.xlsx (sample data output)
 
@@ -67,7 +68,7 @@ Once all books have been successfully parsed, the program will display the final
 
 >  Finish parsing all books.
 
-#### 4. Clean and Export the data
+### Clean and Export the data
 
 Once all the data is parsed from the website, the next step is to perform basic data cleaning. After ensuring that all the data is properly cleaned and formatted, an Excel file will be generated containing the complete dataset.
 
