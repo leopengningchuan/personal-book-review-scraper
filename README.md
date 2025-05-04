@@ -1,5 +1,5 @@
-# Douban Book Scrapping
-Parsing Personal Douban Book Reading
+# Personal Book Review Scraper
+Automated scraper for archiving personal book reviews from an online reading platform
 
 ## Project Background
 [Douban.com](https://www.douban.com) is a popular online platform and social network where users can discover, review, and share content related to films, books, music, events, and more. As an active user since 2012, I’ve written numerous reviews and articles about books and movies over the years. My experience with Douban has been both enriching and memorable.
@@ -67,7 +67,7 @@ Once all books have been successfully parsed, the program will display the final
 Once all the data is parsed from the website, the next step is to perform basic data cleaning. After ensuring that all the data is properly cleaned and formatted, an Excel file will be generated containing the complete dataset.
 
 ## License
-This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) file for details.
+This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leopengningchuan/personal-book-review-scraper?tab=MIT-1-ov-file) file for details.
 
 ## Acknowledgements
 - Thanks to [`BeautifulSoup`](https://www.crummy.com/software/BeautifulSoup/) for web scraping.
