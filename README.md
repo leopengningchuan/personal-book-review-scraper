@@ -36,10 +36,10 @@ You will also need your **Douban ID**, which is visible on your profile page (ty
 ### 3. Parse the Information
 After generating the header, the Jupyter Notebook proceeds to parse the books listed in the user's personal Douban account. However, since the program doesn't initially know how many pages it needs to process, it first determines the total number of books recorded in the account.
 
-#### Step 1: Determine Total Number of Pages
+#### 3.1: Determine Total Number of Pages
 The program begins by reading the main book information page to extract the total count of books. Since each page typically contains 15 books, the total number of pages required for parsing is calculated as: `ceiling(total number of books / 15)`.
 
-#### Step 2: Parse Book Details Page by Page
+#### 3.2: Parse Book Details Page by Page
 For each page, the program parses book information one by one, extracting the following details:
 
 - **Name**: The title of the book
@@ -58,17 +58,17 @@ During this process, the program will display status updates such as:
 
  This message indicates the current range of books being processed. If an error occurs during parsing, the program will raise a clear and informative reminder for the book which has not been successfully parsed.
 
-#### Step 3: Completion
+#### 3.3: Completion
 Once all books have been successfully parsed, the program will display the final message:
 
 >  Finish parsing all books.
 
-### Clean and Export the data
+### 4. Clean and Export the data
 Once all the data is parsed from the website, the next step is to perform basic data cleaning. After ensuring that all the data is properly cleaned and formatted, an Excel file will be generated containing the complete dataset.
 
 ## License
 This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) file for details.
 
 ## Acknowledgements
-- Thanks to [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) for web scraping.
+- Thanks to [`BeautifulSoup`](https://www.crummy.com/software/BeautifulSoup/) for web scraping.
 - Thanks to [Douban](https://www.douban.com) for providing the platform.
