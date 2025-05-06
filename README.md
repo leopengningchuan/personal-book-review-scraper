@@ -66,6 +66,10 @@ Once all books have been successfully parsed, the program will display the final
 ### 4. Clean and Export the data
 Once all the data is parsed from the website, the next step is to perform basic data cleaning. After ensuring that all the data is properly cleaned and formatted, an Excel file will be generated containing the complete dataset.
 
+## Future Improvements
+- **Enhanced Data Structuring**: Both publishing information (delimited by `/`) and tags (delimited by `spaces`) are currently stored as single strings. These can be parsed into multiple structured columns or lists to enable more precise filtering, analysis, and visualization.
+- **Reader Preference Analysis**: Once structured, the data can be used to analyze the reader’s preferences — such as frequently read genres, authors, or publishing patterns — using statistical methods or data visualization tools.
+
 ## License
 This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leopengningchuan/personal-book-review-scraper?tab=MIT-1-ov-file) file for details.
 
