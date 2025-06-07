@@ -1,6 +1,22 @@
 # Personal Book Review Scraper
 Automated scraper for archiving personal book reviews from an online reading platform
 
+## Table of Contents
+- [Project Background](#project-background)
+- [Project Goal](#project-goal)
+- [File Structure](#file-structure)
+- [Instructions](#instructions)
+  - [1. Packages Used](#1-packages-used)
+  - [2. Header Generated](#2-header-generated)
+  - [3. Parse the Information](#3-parse-the-information)
+    - [3.1 Determine Total Number of Pages](#31-determine-total-number-of-pages)
+    - [3.2 Parse Book Details Page by Page](#32-parse-book-details-page-by-page)
+    - [3.3 Completion](#33-completion)
+  - [4. Clean and Export the Data](#4-clean-and-export-the-data)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
 ## Project Background
 [Douban.com](https://www.douban.com) is a popular online platform and social network where users can discover, review, and share content related to films, books, music, events, and more. As an active user since 2012, I’ve written numerous reviews and articles about books and movies over the years. My experience with Douban has been both enriching and memorable.
 
@@ -9,14 +25,16 @@ However, Douban doesn’t offer a convenient way to export all user-generated co
 ## Project Goal
 This project is focusing on using **Python Jupyter Notebook** to parsing the personal book reviews and comments in [Douban Book](https://book.douban.com).
 
-## Table of Contents
-- README.md
-- LICENSE.txt
-- Douban Book Scrapping.ipynb
-- Douban_books_result.xlsx (sample data output)
+## File Structure
+- `README.md`
+- `LICENSE.txt`
+- `.gitignore`
+- `.gitattributes`
+- `personal_book_review_scraper.ipynb`
+- `Douban_books_result.xlsx` - sample data output
 
 ## Instructions
-### 1. Package Used
+### 1. Packages Used
 - `pandas, numpy, re, requests, math`: for data manipulation
 - `BeautifulSoup`: for parsing from the website
 
