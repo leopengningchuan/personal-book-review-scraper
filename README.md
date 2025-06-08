@@ -26,12 +26,12 @@ However, Douban doesn’t offer a convenient way to export all user-generated co
 This project is focusing on using **Python Jupyter Notebook** to parsing the personal book reviews and comments in [Douban Book](https://book.douban.com).
 
 ## File Structure
-- `README.md`
-- `LICENSE.txt`
-- `.gitignore`
-- `.gitattributes`
-- `personal_book_review_scraper.ipynb`
-- `Douban_books_result.xlsx` - sample data output
+- `README.md` – project overview
+- `LICENSE.txt` – license information
+- `.gitignore` – git ignore config
+- `.gitattributes` – git attributes config
+- `personal_book_review_scraper.ipynb` – notebook for scraping book reviews
+- `Douban_books_result.xlsx` - sample output
 
 ## Instructions
 ### 1. Packages Used
