@@ -18,12 +18,12 @@ Automated scraper for archiving personal book reviews from an online reading pla
 - [Acknowledgements](#acknowledgements)
 
 ## Project Background
-[Douban.com](https://www.douban.com) is a popular online platform and social network where users can discover, review, and share content related to films, books, music, events, and more. As an active user since 2012, I’ve written numerous reviews and articles about books and movies over the years. My experience with Douban has been both enriching and memorable.
+[*Douban.com*](https://www.douban.com) is a popular online platform and social network where users can discover, review, and share content related to films, books, music, events, and more. As an active user since 2012, I’ve written numerous reviews and articles about books and movies over the years. My experience with Douban has been both enriching and memorable.
 
 However, Douban doesn’t offer a convenient way to export all user-generated content in one click. This raises concerns about data loss in the event of platform failure. To safeguard my reviews, I created a custom web parser to automatically extract and store all my book reviews locally. This ensures my content is securely backed up and easily accessible, regardless of the platform’s future.
 
 ## Project Goal
-This project is focusing on using **Python Jupyter Notebook** to parsing the personal book reviews and comments in [Douban Book](https://book.douban.com).
+This project is focusing on using **Python Jupyter Notebook** to parsing the personal book reviews and comments in [*Douban Book*](https://book.douban.com).
 
 ## File Structure
 - `README.md` – project overview
@@ -41,7 +41,7 @@ This project is focusing on using **Python Jupyter Notebook** to parsing the per
 ### 2. Header Generated
 To parse personal book data from Douban, you must be logged into your account. Instead of entering credentials manually, the program uses an HTTP header that mimics a logged-in session. This header includes two key components: your **User Agent** and **Login Cookie**.
 
-- **User Agent**: This identifies your browser and operating system. Please refer to [What is my User Agent?](https://www.whatismybrowser.com/detect/what-is-my-user-agent/) for more information.
+- **User Agent**: This identifies your browser and operating system. Please refer to [*What is my User Agent?*](https://www.whatismybrowser.com/detect/what-is-my-user-agent/) for more information.
 - **Login Cookie**: This simulates your logged-in session. To retrieve it:
   1. Open your browser and visit the [Douban Book Login](https://accounts.douban.com/passport/login) page.
   2. Open the **Developer Tools** (usually `F12` or right-click > "Inspect")
@@ -93,4 +93,4 @@ This project is licensed under the MIT License - see the [![License: MIT](https:
 
 ## Acknowledgements
 - Thanks to [`BeautifulSoup`](https://www.crummy.com/software/BeautifulSoup/) for web scraping.
-- Thanks to [Douban](https://www.douban.com) for providing the platform.
+- Thanks to [*Douban.com*](https://www.douban.com) for providing the platform.
