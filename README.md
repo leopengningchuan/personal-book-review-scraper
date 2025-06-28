@@ -31,11 +31,13 @@ This project is focusing on using **Python Jupyter Notebook** to parsing the per
 - `.gitignore` – git ignore config
 - `.gitattributes` – git attributes config
 - `personal_book_review_scraper.ipynb` – notebook for scraping book reviews
-- `Douban_books_result.xlsx` - sample output
+- `book_review_sample.xlsx` - sample output XLSX
 
 ## Instructions
 ### 1. Packages Used
-- `pandas, numpy, re, requests, math`: for data manipulation
+- `pandas`, `numpy`, `re`, `math`: for data manipulation
+- `requests`, `os`, `logging`: core Python libraries for basic system operations
+- `dotenv`: for loading environment variables from a `.env` file
 - `BeautifulSoup`: for parsing from the website
 
 ### 2. Header Generated
@@ -44,12 +46,14 @@ To parse personal book data from Douban, you must be logged into your account. I
 - **User Agent**: This identifies your browser and operating system. Please refer to [*What is my User Agent?*](https://www.whatismybrowser.com/detect/what-is-my-user-agent/) for more information.
 - **Login Cookie**: This simulates your logged-in session. To retrieve it:
   1. Open your browser and visit the [Douban Book Login](https://accounts.douban.com/passport/login) page.
-  2. Open the **Developer Tools** (usually `F12` or right-click > "Inspect")
+  2. Open the **Developer Tools** (usually **F12** or right-click > "Inspect")
   3. Log in to your Douban account.
   4. In the **Network** tab of Developer Tools, find a request sent to Douban after login.
-  5. Check the **Request Headers** to locate the `cookie` field — copy its full value.
+  5. Check the **Request Headers** to locate the **cookie** field — copy its full value.
 
 You will also need your **Douban ID**, which is visible on your profile page (typically near your username or in the URL when viewing your profile).
+
+A login test is included to verify access to the website by detecting the presence of the username element on the homepage. If the element is not found, a `ValueError` is raised to indicate that the cookie may be invalid or expired.
 
 ### 3. Parse the Information
 After generating the header, the Jupyter Notebook proceeds to parse the books listed in the user's personal Douban account. However, since the program doesn't initially know how many pages it needs to process, it first determines the total number of books recorded in the account.
