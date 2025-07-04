@@ -26,10 +26,14 @@ However, Douban doesn’t offer a convenient way to export all user-generated co
 This project is focusing on using **Python Jupyter Notebook** to parsing the personal book reviews and comments in [*Douban Book*](https://book.douban.com).
 
 ## File Structure
+
+Configuration & Metadata:
 - `README.md` – project overview
 - `LICENSE.txt` – license information
 - `.gitignore` – git ignore config
 - `.gitattributes` – git attributes config
+
+Core Logic:
 - `personal_book_review_scraper.ipynb` – notebook for scraping book reviews
 - `book_review_sample.xlsx` - sample output XLSX
 
@@ -58,10 +62,10 @@ A login test is included to verify access to the website by detecting the presen
 ### 3. Parse the Information
 After generating the header, the Jupyter Notebook proceeds to parse the books listed in the user's personal Douban account. However, since the program doesn't initially know how many pages it needs to process, it first determines the total number of books recorded in the account.
 
-#### 3.1: Determine Total Number of Pages
+#### 3.1 Determine Total Number of Pages
 The program begins by reading the main book information page to extract the total count of books. Since each page typically contains 15 books, the total number of pages required for parsing is calculated as: `ceiling(total number of books / 15)`.
 
-#### 3.2: Parse Book Details Page by Page
+#### 3.2 Parse Book Details Page by Page
 For each page, the program parses book information one by one, extracting the following details:
 
 - **Name**: The title of the book
@@ -80,7 +84,7 @@ During this process, the program will display status updates such as:
 
  This message indicates the current range of books being processed. If an error occurs during parsing, the program will raise a clear and informative reminder for the book which has not been successfully parsed.
 
-#### 3.3: Completion
+#### 3.3 Completion
 Once all books have been successfully parsed, the program will display the final message:
 
 >  Finish parsing all books.
