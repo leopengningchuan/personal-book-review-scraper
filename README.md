@@ -26,7 +26,6 @@ However, Douban doesn’t offer a convenient way to export all user-generated co
 This project is focusing on using **Python Jupyter Notebook** to parsing the personal book reviews and comments in [*Douban Book*](https://book.douban.com).
 
 ## File Structure
-
 Configuration & Metadata:
 - `README.md` – project overview
 - `LICENSE.txt` – license information
