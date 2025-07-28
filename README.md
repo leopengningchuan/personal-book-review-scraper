@@ -14,8 +14,8 @@ Automated scraper for archiving personal book reviews from an online reading pla
     - [3.3 Completion](#33-completion)
   - [4. Clean and Export the Data](#4-clean-and-export-the-data)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## Project Background
 [*Douban.com*](https://www.douban.com) is a popular online platform and social network where users can discover, review, and share content related to films, books, music, events, and more. As an active user since 2012, I’ve written numerous reviews and articles about books and movies over the years. My experience with Douban has been both enriching and memorable.
@@ -95,9 +95,9 @@ Once all the data is parsed from the website, the next step is to perform basic 
 - **Enhanced Data Structuring**: Both publishing information (delimited by `/`) and tags (delimited by `spaces`) are currently stored as single strings. These can be parsed into multiple structured columns or lists to enable more precise filtering, analysis, and visualization.
 - **Reader Preference Analysis**: Once structured, the data can be used to analyze the reader’s preferences — such as frequently read genres, authors, or publishing patterns — using statistical methods or data visualization tools.
 
-## License
-This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leopengningchuan/personal-book-review-scraper?tab=MIT-1-ov-file) file for details.
-
 ## Acknowledgements
 - Thanks to [`BeautifulSoup`](https://www.crummy.com/software/BeautifulSoup/) for web scraping.
 - Thanks to [*Douban.com*](https://www.douban.com) for providing the platform.
+
+## License
+This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leopengningchuan/personal-book-review-scraper?tab=MIT-1-ov-file) file for details.
