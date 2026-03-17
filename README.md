@@ -100,4 +100,4 @@ Once all the data is parsed from the website, the next step is to perform basic 
 - Thanks to [*Douban.com*](https://www.douban.com) for providing the platform.
 
 ## License
-This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/leopengningchuan/personal-book-review-scraper?tab=MIT-1-ov-file) file for details.
+This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]([https://github.com/leopengningchuan/personal-book-review-scraper?tab=MIT-1-ov-file](https://github.com/leopengningchuan/personal-book-review-scraper/blob/main/LICENSE)) file for details.
